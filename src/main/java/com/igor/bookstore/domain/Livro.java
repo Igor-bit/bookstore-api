@@ -1,4 +1,4 @@
-package domain;
+package com.igor.bookstore.domain;
 
 import java.io.Serializable;
 import java.util.Objects;
