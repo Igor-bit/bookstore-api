@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import java.util.Objects;
 
 @Entity
 public class Categoria implements Serializable {
@@ -25,12 +26,12 @@ public class Categoria implements Serializable {
 		super();
 	}
 
-	public Categoria(Integer id, String nome, String descricao, List<Livro> livros) {
+	public Categoria(Integer id, String nome, String descricao) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.descricao = descricao;
-		this.livros = livros;
+		
 	}
 
 	public Integer getId() {
